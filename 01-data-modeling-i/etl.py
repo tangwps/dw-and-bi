@@ -26,6 +26,7 @@ def get_files(filepath: str) -> List[str]:
 def process(cur, conn, filepath):
     # Get list of files from filepath
     all_files = get_files(filepath)
+    print(all_files) 
 
     for datafile in all_files:
         with open(datafile, "r") as f:
@@ -33,7 +34,7 @@ def process(cur, conn, filepath):
             for each in data:
                 # Print some sample data
                 
-                if each["type"] == "IssueCommentEvent":
+                if each["type"] == "IssueCommentEvent": # this is how we store data
                     print(
                         each["id"], 
                         each["type"],
@@ -55,18 +56,19 @@ def process(cur, conn, filepath):
                         each["created_at"],
                     )
 
-                # Insert data into tables here
+                # Insert data into "actors" tables here
                 insert_statement = f"""
                     INSERT INTO actors (
                         id,
-                        login
-                    ) VALUES ({each["actor"]["id"]}, '{each["actor"]["login"]}')
+                        login,
+                        url
+                    ) VALUES ({each["actor"]["id"]}, '{each["actor"]["login"]}', '{each["actor"]["url"]}')
                     ON CONFLICT (id) DO NOTHING
                 """
                 # print(insert_statement)
                 cur.execute(insert_statement)
 
-                # Insert data into tables here
+                # Insert data into "events" tables here
                 insert_statement = f"""
                     INSERT INTO events (
                         id,
@@ -78,16 +80,29 @@ def process(cur, conn, filepath):
                 # print(insert_statement)
                 cur.execute(insert_statement)
 
+                # Insert data into "repositories" tables here
+                insert_statement = f"""
+                    INSERT INTO repositories (
+                        id,
+                        name,
+                        actor_id,
+                        created_at
+                    ) VALUES ('{each["repo"]["id"]}', '{each["repo"]["name"]}', '{each["actor"]["id"]}', '{each["created_at"]}')
+                    ON CONFLICT (id) DO NOTHING
+                """
+                # print(insert_statement)
+                cur.execute(insert_statement)
+
                 conn.commit()
 
 
 def main():
     conn = psycopg2.connect(
         "host=127.0.0.1 dbname=postgres user=postgres password=postgres"
-    )
+    ) # create connection
     cur = conn.cursor()
 
-    process(cur, conn, filepath="../data")
+    process(cur, conn, filepath="../data") 
 
     conn.close()
 
