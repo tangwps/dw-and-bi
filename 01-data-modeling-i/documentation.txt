@@ -14,5 +14,5 @@
         มี repositories_id เป็น primary key และ actor_id เป็น foriegn key 
 6. และจัดการกับไฟล์ etl.py เพื่อให้สามารถจัดการกับข้อมูลได้ ด้วยการ insert data from JSON files
     -> ใช้คำสั่ง {'each["KEY"]'} โดยสามารถใส่ Key ที่ต้องการจะดึง values มาแสดงบน database 
-ึ7. เปิด postgres ผ่าน web application ที่ port 8080 และสามารถใช้งาน postgres ผ่าน web ได้
+7. เปิด postgres ผ่าน web application ที่ port 8080 และสามารถใช้งาน postgres ผ่าน web ได้
     -> ทดสอบ database ด้วยคำสั่ง select * from repositories 
