@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "hazel-cipher-413911",
+  "private_key_id": "a62c021c83143464ac2c0be9b21cd7f8dc1d25d5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCVri8ZT1V9+zhe\nwPtocYnruuPQoN6ygqlk8grP0QyZURPbnQNghkZeacE2pPBNDf3c9HMt8c1wvPYs\nyTVYb+cnVl0VW5BGlL9v+jj/KD15OfXze7He9FbLlmdJ9hVn97xWsQkQl4pCDJ7t\nxxm4f8SPEOTXHeOH9Imb4Pw0AGxFKuOIER6IUckUY+OPLF+9aBgS7fqn4BQSFEHK\nASPyXzcJYRLuUcdsIIHMB7aogOr3MLg0i92yVVhmC4ZpDGlNN7HrQS0xR0Klr8pB\niD0qYg0IPx4H+WtuNVVM7UeCqHy31mPc11BNANKcJB4lAoKv4Mo2thNyKtMCiP0L\n/Pu4UvyjAgMBAAECggEAEUwTQkwCN7BP59dKVlwEkbrDt+jXQ27JD5LPAAwK9i7B\n6jefW8i4mhGDlAKEiIsM4rtXEiCm2pfjpPJNmV45KrkWwbCWoClxZAnZC1eFnxw9\nGXmaaQb4fsdvQUNQXvboi2YjA4lXn2Fg/l5rUQBm4ReVMmzQTfZK7roVuxavbGCm\nqb9KiKwj60IfCjKuMtUVGpwBJBZct0bsaSYx+Q4EqJchY8Mh89m3MG7WSvKhHHLL\ne2jaW981TeJAK3xEH+2EaXY1/CvwgpoQwojTPLT3MgCgmHYQLKhsvte3W4FxWszL\ndPLs7mdorFNq32XVmdIFzgcLTxzKmiaU+LHEKOjayQKBgQDL8glGR7mILQ+g1McB\nrrfG7DLvJlvYrBOwEZneMmTEo7HXeHZDlLpgp6kEy32ZDzGcfOuj7wDC6CWhfpP6\n8cpBs+PD5BCdA8Wg98UdUTyfKbavmmxzMLpidIodileIbM29kuXpwmZRCIfdPcMF\nTImw+dZXP9xIT2cBL7Wte3s/uwKBgQC74mzEqk4JuaTvphLPMUaRwemMUpC6gaXJ\nk2dJBTA4AB3MrX60Q3EL0yjXJ3+bsYtn98VZH6znHuU7ti5IUsChcx9v4U2KsNpH\na1d492AUPoDFmbl/1Gc2ItrIYDsFfXpz1Lz+lsLDBsEKVgtQ+9nbkHATVTzjzdAy\nEdRze0qkOQKBgQC5PivMaUOM/Bjw5bOoxJDqnwoYjMfqA0qSpzoSR8Wdkm3rn+AT\nvFiZiFAOKeL4DoPqdtD2AxW283OSv00cJ1il2wZrnJC2fYGZltO0sGAW1aW41NPi\nwQTafq4g7NJa+TDbGz232LpkqhH2E6469u0uEY/tifTEvVJ7EmG7pKgrFwKBgEe7\n9YdI9q6j4KNXJwtQZv8zqDXZOETdRy0lSGQKxRQ8hyQkgaHVtg2ru4YaIJCTQwSZ\nBxI2E8/SbfdUYWtfnQiHadNPlEmFqHFoPGeFG3vfOU84mCiEMjvrJtkmVKKN+/jJ\nmrchXI8VvxJxM7Th05YPGZtoCe14IStcv16wDhmRAoGBAL1yJOr5lcLZ+EO5evM+\nD7l3sMfQ8nqK8nOzIUHsHM879rW15/q9hWAeXlMXeXNhDsti5k2zrhqboz6JYVUn\nDfxLMHjadY+5Sk7ADsnj9H307P5o8JS5aM5gTcqeivOEvJuuddjajre+yI92ManG\n4G8c3OdI6eHmoxitaS5HprX4\n-----END PRIVATE KEY-----\n",
+  "client_email": "swu-ds525-load-data-to-bigquer@hazel-cipher-413911.iam.gserviceaccount.com",
+  "client_id": "102750083318105170901",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/swu-ds525-load-data-to-bigquer%40hazel-cipher-413911.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
